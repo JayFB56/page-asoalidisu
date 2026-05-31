@@ -17,7 +17,7 @@ const _jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "GiGi Energy Drink | Sueña en Grande, Bebe GiGi",
+  title: "Asoalidisu",
   description: "Cero azúcar, 75mg de cafeína, 100% sabores naturales. La bebida energética para soñadores y emprendedores.",
   keywords: ["bebida energética", "cero azúcar", "energía natural", "GiGi", "cafeína"],
     generator: 'v0.app'

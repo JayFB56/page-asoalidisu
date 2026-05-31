@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
+import Image from "next/image"
 import { useLenis } from "lenis/react"
 import { Menu, X } from "lucide-react"
 
@@ -79,24 +80,14 @@ export function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <motion.span
-            className="text-2xl font-black tracking-tighter"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          >
-            <span className={scrolled ? "text-white" : "text-[#121212]"}>Gi</span>
-            <motion.span
-              className="text-[#AFFF00]"
-              animate={{
-                textShadow: scrolled
-                  ? ["0 0 10px rgba(175,255,0,0.5)", "0 0 20px rgba(175,255,0,0.8)", "0 0 10px rgba(175,255,0,0.5)"]
-                  : "none",
-              }}
-              transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-            >
-              Gi
-            </motion.span>
-          </motion.span>
+          <Image
+            src="/images/logo.svg"
+            alt="GiGi Energy"
+            width={80}
+            height={32}
+            className="h-8 w-auto"
+            priority
+          />
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
