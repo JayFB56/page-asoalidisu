@@ -13,9 +13,9 @@ const lifestyleImages = [
 ]
 
 const socialPosts = [
-  { handle: "@katiecreativa", text: "GiGi me ayudó a producir mi álbum entero. Sin mentiras 🔥", likes: "2.4k" },
-  { handle: "@javierfit", text: "Cero azúcar pero 100% energía. Esta es la buena.", likes: "1.8k" },
-  { handle: "@santi_tech", text: "Por fin una bebida energética que no sabe a químicos", likes: "956" },
+  { handle: "@marialacosta", text: "El encocado de Asoalidisu me transportó a Esmeraldas 🔥", likes: "2.4k" },
+  { handle: "@carlos_gourmet", text: "La mejor comida tradicional ecuatoriana que he probado.", likes: "1.8k" },
+  { handle: "@valesaborsabor", text: "El ceviche de camarón es simplemente espectacular", likes: "956" },
 ]
 
 const containerVariants = {
@@ -90,7 +90,7 @@ export function LifestyleSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.15 }}
             >
-               GIGI EN{" "}
+               ASOALIDISU{" "}
             </motion.span>
             <motion.span
               className="text-[#AFFF00] inline-block"
@@ -99,7 +99,7 @@ export function LifestyleSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.25 }}
             >
-               ACCIÓN
+               EN TU MESA
             </motion.span>
           </h2>
         </motion.div>

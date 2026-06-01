@@ -18,8 +18,8 @@ const _jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Asoalidisu",
-  description: "Cero azúcar, 75mg de cafeína, 100% sabores naturales. La bebida energética para soñadores y emprendedores.",
-  keywords: ["bebida energética", "cero azúcar", "energía natural", "GiGi", "cafeína"],
+  description: "Comida tradicional esmeraldeña. Encocados, ceviches y encebollados auténticos de la costa ecuatoriana.",
+  keywords: ["comida ecuatoriana", "Esmeraldas", "encocado", "ceviche", "Asoalidisu", "cocina tradicional"],
     generator: 'v0.app'
 }
 

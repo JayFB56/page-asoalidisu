@@ -10,31 +10,30 @@ import { ChevronLeft, ChevronRight } from "lucide-react"
 const flavors = [
   {
     id: 1,
-    name: "Limón Lima",
-    tagline: "Impacto Cítrico",
-    description: "Una explosión de limón y lima natural que te despierta al instante.",
-    image: "/images/drink2.png",
+    name: "Encocado de Pescado",
+    tagline: "Sabor del Pacífico",
+    description: "Pescado fresco cocinado en salsa de coco con especias tradicionales esmeraldeñas.",
+    image: "/images/encocado_de_pescado.png",
     bgColor: "from-[#84cc16]/20 via-[#84cc16]/10 to-transparent",
     accentColor: "#84cc16",
   },
   {
     id: 2,
-    name: "Piña Coco",
-    tagline: "Aventura Tropical",
-    description: "Vibras isleñas en cada sorbo. Transpórtate al paraíso.",
-    image: "/images/drink1.png",
+    name: "Ceviche de Camarón",
+    tagline: "Frescura Marina",
+    description: "Camarones marinados en limón con cebolla, tomate y cilantro. El clásico de la costa.",
+    image: "/images/ceviche_de_camaron.png",
     bgColor: "from-[#f59e0b]/20 via-[#f59e0b]/10 to-transparent",
     accentColor: "#f59e0b",
   },
   {
     id: 3,
-    name: "Misterio",
-    tagline: "Próximamente",
-    description: "Algo épico se está preparando... Mantente atento.",
-    image: "/mystery-energy-drink-can-silhouette.jpg",
+    name: "Encebollado",
+    tagline: "Tradicional",
+    description: "Sopa de pescado con yuca, cebolla encurtida y acompañamientos. El alma de Esmeraldas.",
+    image: "/images/encebollado.png",
     bgColor: "from-[#AFFF00]/20 via-[#AFFF00]/5 to-transparent",
     accentColor: "#AFFF00",
-    mystery: true,
   },
 ]
 
@@ -126,7 +125,7 @@ export function FlavorCarousel() {
             viewport={{ once: true }}
             transition={{ delay: 0.2 }}
           >
-            NUESTROS SABORES
+            NUESTROS PLATILLOS
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-black text-[#121212] tracking-tighter mt-2 overflow-hidden">
             <motion.span
@@ -136,7 +135,7 @@ export function FlavorCarousel() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1] }}
             >
-              ELIGE TU{" "}
+              DESCUBRE{" "}
             </motion.span>
             <motion.span
               className="inline-block"
@@ -146,7 +145,7 @@ export function FlavorCarousel() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.1 }}
             >
-              ENERGÍA
+              ESMERALDAS
             </motion.span>
           </h2>
         </motion.div>
@@ -176,19 +175,11 @@ export function FlavorCarousel() {
                 style={{ perspective: 1000 }}
               >
                 <motion.div
-                  className={`bg-white rounded-3xl p-6 md:p-8 border-2 border-[#121212]/10 shadow-xl ${currentFlavor.mystery ? "relative overflow-hidden" : ""}`}
+                  className="bg-white rounded-3xl p-6 md:p-8 border-2 border-[#121212]/10 shadow-xl"
                   style={{ rotateX, rotateY, transformStyle: "preserve-3d" }}
                   onMouseMove={handleMouseMove}
                   onMouseLeave={handleMouseLeave}
                 >
-                  {currentFlavor.mystery && (
-                    <motion.div
-                      className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg viewBox=%270 0 100 100%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.8%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27/%3E%3C/svg%3E')] opacity-10 pointer-events-none"
-                      animate={{ opacity: [0.05, 0.15, 0.05] }}
-                      transition={{ duration: 0.5, repeat: Number.POSITIVE_INFINITY }}
-                    />
-                  )}
-
                   <div className="grid md:grid-cols-2 gap-6 items-center">
                     <motion.div
                       className="relative aspect-[3/4] flex items-center justify-center"
@@ -199,17 +190,9 @@ export function FlavorCarousel() {
                         src={currentFlavor.image || "/placeholder.svg"}
                         alt={currentFlavor.name}
                         fill
-                        className={`object-contain ${currentFlavor.mystery ? "blur-sm grayscale" : ""}`}
+                        className="object-contain"
                       />
-                      {currentFlavor.mystery && (
-                        <motion.div
-                          className="absolute inset-0 flex items-center justify-center"
-                          animate={{ scale: [1, 1.1, 1], opacity: [0.2, 0.4, 0.2] }}
-                          transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                        >
-                          <span className="text-7xl font-black text-[#121212]/20">?</span>
-                        </motion.div>
-                      )}
+                      
                     </motion.div>
 
                     <div className="space-y-4">
@@ -242,59 +225,39 @@ export function FlavorCarousel() {
                         {currentFlavor.description}
                       </motion.p>
 
-                      {!currentFlavor.mystery && (
-                        <motion.div
-                          className="flex flex-wrap gap-2"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ delay: 0.5 }}
-                        >
-                          {["Cero Azúcar", "Acelera Metabolismo", "Sabores Naturales", "Rico en Vitaminas"].map((badge) => (
-                            <span
-                              key={badge}
-                              className="px-2 py-1 bg-[#121212]/5 rounded-full text-xs font-mono text-[#121212]/60"
-                            >
-                              {badge}
-                            </span>
-                          ))}
-                        </motion.div>
-                      )}
+                      <motion.div
+                        className="flex flex-wrap gap-2"
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 0.5 }}
+                      >
+                        {["Producto Artesanal", "Receta Tradicional", "Ingredientes Frescos", "Sabor Auténtico"].map((badge) => (
+                          <span
+                            key={badge}
+                            className="px-2 py-1 bg-[#121212]/5 rounded-full text-xs font-mono text-[#121212]/60"
+                          >
+                            {badge}
+                          </span>
+                        ))}
+                      </motion.div>
 
-                      {!currentFlavor.mystery && (
-                        <motion.button
-                          className="px-6 py-3 rounded-full font-bold text-sm tracking-wide w-full md:w-auto relative overflow-hidden"
-                          whileHover={{ scale: 1.02 }}
-                          whileTap={{ scale: 0.98 }}
-                          transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                          style={{ backgroundColor: currentFlavor.accentColor, color: "#121212" }}
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                        >
-                          <motion.span
-                            className="absolute inset-0 bg-white/20"
-                            initial={{ x: "-100%" }}
-                            whileHover={{ x: "100%" }}
-                            transition={{ duration: 0.5 }}
-                          />
-                          <span className="relative z-10">Añadir al Carrito</span>
-                        </motion.button>
-                      )}
-
-                      {currentFlavor.mystery && (
-                        <motion.div
-                          className="flex items-center gap-3"
-                          initial={{ opacity: 0 }}
-                          animate={{ opacity: 1 }}
-                          transition={{ delay: 0.5 }}
-                        >
-                          <motion.div
-                            className="w-2 h-2 bg-[#AFFF00] rounded-full"
-                            animate={{ scale: [1, 1.3, 1], opacity: [1, 0.5, 1] }}
-                            transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-                          />
-                          <span className="font-mono text-xs text-[#121212]/60">Muy pronto...</span>
-                        </motion.div>
-                      )}
+                      <motion.button
+                        className="px-6 py-3 rounded-full font-bold text-sm tracking-wide w-full md:w-auto relative overflow-hidden"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                        style={{ backgroundColor: currentFlavor.accentColor, color: "#121212" }}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                      >
+                        <motion.span
+                          className="absolute inset-0 bg-white/20"
+                          initial={{ x: "-100%" }}
+                          whileHover={{ x: "100%" }}
+                          transition={{ duration: 0.5 }}
+                        />
+                        <span className="relative z-10">Ordenar Ahora</span>
+                      </motion.button>
                     </div>
                   </div>
                 </motion.div>

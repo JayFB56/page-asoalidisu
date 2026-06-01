@@ -70,7 +70,7 @@ export function SocialSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.2 }}
             >
-              @GIGIENERGY
+              @ASOALIDISU
             </motion.span>
             <motion.span
               className="text-[#AFFF00] inline-block"
@@ -79,7 +79,7 @@ export function SocialSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.3 }}
             >
-              .IN
+              .EC
             </motion.span>
           </h2>
         </motion.div>
@@ -137,7 +137,7 @@ export function SocialSection() {
           transition={{ delay: 0.5 }}
         >
           <motion.a
-            href="https://instagram.com/gigienergy.in"
+            href="https://instagram.com/asoalidisu"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 bg-[#AFFF00] text-[#121212] px-6 py-3 rounded-full font-bold text-sm tracking-wide relative overflow-hidden group"
@@ -151,7 +151,7 @@ export function SocialSection() {
               transition={{ duration: 0.6 }}
             />
             <Instagram className="w-4 h-4 relative z-10" />
-            <span className="relative z-10">Sigue a @gigienergy.in</span>
+            <span className="relative z-10">Sigue a @asoalidisu</span>
           </motion.a>
         </motion.div>
       </div>

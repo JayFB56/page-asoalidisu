@@ -42,16 +42,16 @@ export function Footer() {
 
   const footerLinks = [
     {
-      title: "Productos",
-      links: ["Limón Lima", "Piña Coco", "Misterio", "Paquetes"],
+      title: "Platillos",
+      links: ["Encocado de Pescado", "Ceviche de Camarón", "Encebollado", "Encocado de Cangrejo"],
     },
     {
       title: "Enlaces Rápidos",
-      links: ["Inicio", "Sabores", "Creadores", "Distribuidores"],
+      links: ["Inicio", "Platillos", "Comunidad", "Servicios"],
     },
     {
       title: "Empresa",
-      links: ["Nosotros", "Empleo", "Prensa", "Contacto"],
+      links: ["Nosotros", "Ubicación", "Contacto", "Trabaja con Nosotros"],
     },
     {
       title: "Legal",
@@ -86,7 +86,7 @@ export function Footer() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.1 }}
             >
-              SUBIR DE NIVEL?
+              PROBAR ESMERALDAS?
             </motion.span>
           </h2>
         </motion.div>
@@ -131,7 +131,7 @@ export function Footer() {
                 animate={isSubmitting ? { opacity: [1, 0.5, 1] } : {}}
                 transition={{ duration: 0.5, repeat: isSubmitting ? Number.POSITIVE_INFINITY : 0 }}
               >
-                {isSubmitting ? "Uniendo..." : "25% de Descuento"}
+                {isSubmitting ? "Enviando..." : "Suscríbete"}
               </motion.span>
             </motion.button>
           </div>
@@ -142,7 +142,7 @@ export function Footer() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            Únete a más de 50k soñadores. Sin spam, solo energía.
+            Recibe ofertas y novedades de Asoalidisu directo en tu correo.
           </motion.p>
         </motion.div>
 
@@ -154,8 +154,8 @@ export function Footer() {
           transition={{ delay: 0.3 }}
         >
           <p className="text-white/60 font-mono text-xs max-w-xl mx-auto leading-relaxed">
-            GiGi Energy es una bebida energética mejor para ti, elaborada con sabores naturales, cero azúcar y una
-            fórmula de energía limpia. Alimenta tu ambición sin el bajón.
+            Asoalidisu es un emprendimiento de comida tradicional esmeraldeña, elaborada con ingredientes frescos y recetas
+            ancestrales de la costa ecuatoriana. Llevamos el auténtico sabor de Esmeraldas a tu mesa.
           </p>
         </motion.div>
 
@@ -198,13 +198,12 @@ export function Footer() {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 400, damping: 17 }}
           >
-            <span className="text-xl font-black">
-              <span className="text-white">Gi</span>
-              <span className="text-[#AFFF00]">Gi</span>
+            <span className="text-xl font-black text-white">
+              ASOALIDISU
             </span>
           </motion.div>
 
-          <p className="text-white/40 font-mono text-xs">© 2026 GiGi Energy. Todos los derechos reservados.</p>
+          <p className="text-white/40 font-mono text-xs">© 2026 Asoalidisu. Todos los derechos reservados.</p>
 
           <motion.p
             className="text-white/30 font-mono text-xs cursor-pointer"
@@ -225,7 +224,7 @@ export function Footer() {
             }
             transition={{ duration: 0.5 }}
           >
-            hecho con energía
+            hecho con amor esmeraldeño
           </motion.p>
         </motion.div>
       </div>
@@ -237,7 +236,7 @@ export function Footer() {
         viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        GiGi
+        Asoalidisu
       </motion.div>
     </footer>
   )

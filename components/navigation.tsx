@@ -63,10 +63,10 @@ export function Navigation() {
 
   const navLinks = [
     { label: "Inicio", href: "#hero" },
-    { label: "Sabores", href: "#flavours" },
-    { label: "Creadores", href: "#creators" },
-    { label: "Distribuidores", href: "#distributors" },
-    { label: "Empleo", href: "#careers" },
+    { label: "Platillos", href: "#flavours" },
+    { label: "Comunidad", href: "#creators" },
+    { label: "Servicios", href: "#distributors" },
+    { label: "Contacto", href: "#careers" },
   ]
 
   return (
@@ -82,7 +82,7 @@ export function Navigation() {
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/logo.svg"
-            alt="GiGi Energy"
+            alt="Asoalidisu"
             width={80}
             height={32}
             className="h-8 w-auto"
@@ -137,7 +137,7 @@ export function Navigation() {
             animate={{ x: ["-100%", "200%"] }}
             transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, repeatDelay: 3 }}
           />
-          <span className="relative z-10">25% de Descuento</span>
+          <span className="relative z-10">Haz tu Pedido</span>
         </motion.button>
 
         <motion.button
@@ -199,7 +199,7 @@ export function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
               >
-                25% de Descuento
+                Haz tu Pedido
               </motion.button>
             </div>
           </motion.div>

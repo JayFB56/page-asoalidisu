@@ -7,27 +7,27 @@ import { Sparkles, Dumbbell, Building2, Calendar } from "lucide-react"
 const activations = [
   {
     icon: Sparkles,
-    title: "Eventos de Degustación",
-    description: "Prueba GiGi en eventos exclusivos de degustación cerca de ti.",
-    cta: "Ver Eventos",
+    title: "Eventos y Catering",
+    description: "Lleva el sabor de Esmeraldas a tus eventos con nuestro servicio de catering.",
+    cta: "Cotizar Evento",
   },
   {
     icon: Dumbbell,
-    title: "Gimnasios y Estudios",
-    description: "Asóciate con nosotros para impulsar tu comunidad fitness.",
-    cta: "Asóciate",
+    title: "Pedidos para Grupos",
+    description: "Perfecto para reuniones familiares, empresas y celebraciones.",
+    cta: "Pedido Grupal",
   },
   {
     icon: Building2,
-    title: "Oficinas Corporativas",
-    description: "Potencia tu lugar de trabajo. Pedidos al por mayor disponibles.",
-    cta: "Solicitar Cotización",
+    title: "Distribución",
+    description: "Conviértete en distribuidor de Asoalidisu en tu ciudad.",
+    cta: "Ser Distribuidor",
   },
   {
     icon: Calendar,
-    title: "Organizadores de Eventos",
-    description: "Patrocina tu próximo evento con energía GiGi.",
-    cta: "Patrocinar Evento",
+    title: "Clases de Cocina",
+    description: "Aprende a preparar auténticos platos esmeraldeños con nosotros.",
+    cta: "Inscribirme",
   },
 ]
 
@@ -77,7 +77,7 @@ export function ActivationsSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
           >
-            ACTIVACIONES
+            SERVICIOS
           </motion.span>
           <h2 className="text-3xl md:text-5xl font-black text-[#121212] tracking-tighter mt-2 overflow-hidden">
             <motion.span
@@ -87,7 +87,7 @@ export function ActivationsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.2 }}
             >
-              EXPERIMENTA{" "}
+              DISFRUTA{" "}
             </motion.span>
             <motion.span
               className="text-[#AFFF00] inline-block"
@@ -96,7 +96,7 @@ export function ActivationsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.3 }}
             >
-              GIGI
+              ASOALIDISU
             </motion.span>
           </h2>
           <motion.p
@@ -106,7 +106,7 @@ export function ActivationsSection() {
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
           >
-            Desde eventos de degustación hasta alianzas corporativas, lleva GiGi a tu mundo.
+            Desde catering para eventos hasta clases de cocina, llevamos Esmeraldas a tu mesa.
           </motion.p>
         </motion.div>
 

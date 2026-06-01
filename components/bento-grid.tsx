@@ -9,30 +9,30 @@ import { Zap, Flame, Brain, Sparkles } from "lucide-react"
 const features = [
   {
     icon: Zap,
-    title: "75mg",
-    subtitle: "Cafeína Natural",
-    description: "Energía limpia sin bajón",
+    title: "Frescos",
+    subtitle: "Ingredientes del Mar",
+    description: "Pescado y mariscos frescos de la costa ecuatoriana",
     accent: "#AFFF00",
   },
   {
     icon: Flame,
-    title: "Cero",
-    subtitle: "Azúcar Añadida",
-    description: "Todo el sabor, sin culpa",
+    title: "Tradicional",
+    subtitle: "Recetas Ancestrales",
+    description: "Sabores auténticos transmitidos por generaciones",
     accent: "#FF6B35",
   },
   {
     icon: Brain,
     title: "100%",
-    subtitle: "Claridad Mental",
-    description: "Mayor enfoque y concentración",
+    subtitle: "Hecho en Esmeraldas",
+    description: "Orgullosamente elaborado por manos esmeraldeñas",
     accent: "#00D4FF",
   },
   {
     icon: Sparkles,
-    title: "B12",
-    subtitle: "Complejo Vitamínico",
-    description: "Nutrientes esenciales para la energía",
+    title: "Coco",
+    subtitle: "Base de nuestros encocados",
+    description: "Leche de coco fresca con especias tradicionales",
     accent: "#AFFF00",
   },
 ]
@@ -178,7 +178,7 @@ export function BentoGrid() {
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ delay: 0.1 }}
           >
-            Qué Hay Dentro
+            Nuestra Esencia
           </motion.span>
 
           <div className="overflow-hidden mt-2">
@@ -188,7 +188,7 @@ export function BentoGrid() {
               animate={isInView ? { y: 0 } : { y: 60 }}
               transition={{ duration: 0.6, ease: [0.25, 0.4, 0.25, 1], delay: 0.15 }}
             >
-               Fórmula y Beneficios
+               Calidad y Tradición
             </motion.h2>
           </div>
 

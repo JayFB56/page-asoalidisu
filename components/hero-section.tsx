@@ -100,7 +100,7 @@ export function HeroSection() {
                 animate={{ scale: [1, 1.2, 1], opacity: [1, 0.7, 1] }}
                 transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
               />
-              BEBIDA ENERGÉTICA MEJOR PARA TI
+              COMIDA TRADICIONAL ESMERALDEÑA
             </motion.div>
 
             <div className="space-y-1 overflow-hidden">
@@ -115,7 +115,7 @@ export function HeroSection() {
                   custom={1}
                   className="inline-block"
                 >
-                  ALIMENTA TU
+                  SABOR DE
                 </motion.span>
               </motion.h1>
               <motion.h1
@@ -129,7 +129,7 @@ export function HeroSection() {
                   custom={2}
                   className="inline-block text-[#AFFF00]"
                 >
-                  AMBICIÓN
+                  ESMERALDAS
                 </motion.span>
               </motion.h1>
               <motion.p
@@ -139,7 +139,7 @@ export function HeroSection() {
                 custom={3}
                 className="text-lg md:text-xl font-mono text-[#121212]/60 tracking-tight pt-2 max-w-md"
               >
-                Cero azúcar. Sabores naturales. Energía limpia que se siente diferente.
+                Auténtica comida de la costa ecuatoriana. Encocados, ceviches y encebollados tradicionales.
               </motion.p>
             </div>
 
@@ -161,7 +161,7 @@ export function HeroSection() {
                   whileHover={{ x: "200%" }}
                   transition={{ duration: 0.6 }}
                 />
-                <span className="relative z-10">Regístrate y Ahorra 25%</span>
+                <span className="relative z-10">Ordena Ahora</span>
                 <motion.svg
                   className="w-4 h-4 relative z-10"
                   fill="none"
@@ -180,7 +180,7 @@ export function HeroSection() {
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 400, damping: 17 }}
               >
-                Explorar Sabores
+                Ver Platillos
               </motion.button>
             </motion.div>
 
@@ -191,7 +191,7 @@ export function HeroSection() {
               custom={5}
               className="flex flex-wrap gap-4 pt-2"
             >
-              {["Cero Azúcar", "75mg Cafeína", "Sabores Naturales", "Rico en Vitamina B"].map((benefit, i) => (
+              {["Encocado de Pescado", "Ceviche de Camarón", "Encebollado", "Comida Artesanal"].map((benefit, i) => (
                 <motion.div
                   key={benefit}
                   className="flex items-center gap-2 text-xs font-mono text-[#121212]/60"
@@ -229,10 +229,10 @@ export function HeroSection() {
                 }}
               >
                 <Image
-                  src="/images/drink2.png"
-                  alt="GiGi Energy Drink - Sabor Limón Lima"
-                  width={350}
-                  height={525}
+                  src="/images/encocado_de_pescado.png"
+                  alt="Asoalidisu - Comida Tradicional Esmeraldeña"
+                  width={450}
+                  height={725}
                   className="relative z-10 drop-shadow-2xl"
                   priority
                 />
